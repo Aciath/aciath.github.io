@@ -10,7 +10,7 @@ categories: [docker, devops]
 ## Instalasi Docker Compose
 Setelah melakukan instalasi docker engine atau core docker, langkah selanjutnya kita akan melakukan instalasi docker compose, apa itu docker compose?
 
-![csr config](https://raw.githubusercontent.com/aciath/aciath.github.io/master/static/img/_posts/docker-infra.png)
+
 
 `
 Docker compose berfungsi untuk menjalankan container docker secara bersamaan.
