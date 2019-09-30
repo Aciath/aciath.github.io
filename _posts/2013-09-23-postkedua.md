@@ -15,6 +15,22 @@ Mengapa dibutuhkan? Jika kita mengembangkan aplikasi di komputer sendiri, tentu 
 Untuk membantu memahami Docker, lo harus tau arti dan fungsi dari pilar-pilar ini.
 
 #### 1. Docker Daemon
+Docker daemon adalah sebuah service yang dijalankan di dalam host dalam Operating System (OS) kita. Fungsinya adalah membangun, mendistribusikan, dan menjalankan container docker. Pengguna tidak dapat langsung menggunakan docker daemon, akan tetapi untuk menggunakan docker daemon maka pengguna menggunakan docker client sebagai perantara atau CLI.
 #### 2. Docker Images
+Docker images adalah sebuah template yang bersifat read only. Template ini sebenarnya adalah sebuah OS atau OS yang telah diinstall berbagai aplikasi. Fungsi dari docker images sendiri adalah membuat docker container, hanya dengan satu docker image kita dapat membuat banyak docker container.
 #### 3. Docker Container
+Docker container bisa dianggap sebagai sebuah folder, docker container dibuat menggunakan docker daemon. Docker container ini nantinya dapat dibuild sehingga akan menghasilkan sebuah docker image dan docker image yang dihasilkan dari docker container ini dapat kita gunakan kembali untuk membuat docker container yang baru.
 #### 4. Docker Registry
+Docker registry adalah kumpulan docker image yang bersifat private maupun public yang dapat anda akses di `docker hub`. Kita dapat push atau pull image kita sendiri di sini.
+
+![csr config](https://raw.githubusercontent.com/aciath/aciath.github.io/master/static/img/_posts/docker-infra.png)
+
+#### 5. Docker/Container Orchestration
+adalah suatu kegiatan mengatur siklus hidup dari container, terutama dalam environment yang besar dan dinamis. Developer dapat menggunakan container orchestration untuk mengontrol dan mengautomasi banyak pekerjaan seperti:
+Proses mulai dan berhentinya container.
+Mengekspos fungsionalitas dari container ke user atau container lainnya.
+Memonitor dan merespon perilaku container.
+Mendeploy container versi baru dengan zero-downtime.
+Pembersihan secara auto maupun manual.
+Tool yang digunakan untuk docker/container orchestration salah satunya adalah docker swarm dan kubernetes.
+
