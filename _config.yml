@@ -1,10 +1,10 @@
-title: Stack Problems
+title: Blog
 description: My Personal Stack Problems
 author: Rizky Faisal
 github: https://github.com/aciath
-about: I'm a ????
-disqus_shortname: stackproblems
-google_analytics: UA-XXXXXXXX-Y
+about: I'm a NetDevOps from somewhere
+#disqus_shortname: stackproblems
+#google_analytics: UA-XXXXXXXX-Y
 
 enableTags: true
 tagarray: []
