@@ -7,7 +7,7 @@ categories: [docker, devops]
 
 ![csr config](https://raw.githubusercontent.com/aciath/aciath.github.io/master/static/img/_posts/docker-compose.png)
 
-## Instalasi Docker Compose
+
 Setelah melakukan instalasi docker engine atau core docker, langkah selanjutnya kita akan melakukan instalasi docker compose, apa itu docker compose?
 
 
