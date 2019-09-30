@@ -34,3 +34,32 @@ Mendeploy container versi baru dengan zero-downtime.
 Pembersihan secara auto maupun manual.
 Tool yang digunakan untuk docker/container orchestration salah satunya adalah docker swarm dan kubernetes.
 
+## Instalasi Docker
+
+#### 1. `install paket yum-utils, device-mapper-persistent-data dan lvm2`
+```
+$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+```
+#### 2. Ketika anda menginginkan versi stable dari docker, tambahkan repository berikut :
+
+````
+$ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+````
+#### 3. Untuk konfigurasi opsional, bisa mengaktifkan repository versi edge dan test dengan :
+```
+$ sudo yum-config-manager --enable docker-ce-edge
+$ sudo yum-config-manager --enable docker-ce-test
+```
+#### 4. Nah, tinggal install docker-ce nya dengan perintah :
+```
+$ sudo yum install docker-ce
+```
+`Note : accept GPG key, verifikasi 060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35`
+#### 5. Setelah install docker-ce. layanan tidak otomatis running karena belum ada satu userpun yang ditambahkan ke group docker. Untuk menjalankannya bisa dengan perintah :
+```
+$ sudo systemctl start docker
+```
+#### 6. Untuk mem-verifikasi bahwa layanan docker sudah terinstall dengan baik yaitu bisa menjalankan hello-world image.
+```
+$ sudo docker run hello-world
+```
