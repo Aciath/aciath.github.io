@@ -54,7 +54,7 @@ docker ps -a
 ![csr config](https://raw.githubusercontent.com/aciath/aciath.github.io/master/static/img/_posts/part3-2.png)
 
 
-Akan tampak 2 nama container, karena kita me-run 2 perintah diatas, coba kembali jalankan perintah 
+Akan tampak 1 nama container, karena kita me-run 1 perintah diatas, coba kembali jalankan perintah 
 
 `
 docker run -i -t centos /bin/bash
@@ -73,7 +73,7 @@ hasilnya akan terlihat
 ![csr config](https://raw.githubusercontent.com/aciath/aciath.github.io/master/static/img/_posts/part3-3.png)
 
 
-Ada tambahan 1 container lagi berarti jumlahnya ada 3, jadi setiap kita melakukan perubahan image otomatis docker akan membuat sebuah container baru dengan otomatis juga menambahkan nama dan ID baru. Kita juga dapat kembali ke container yang telah kita lakukan perubahan sebelumnya dan meneruskannya dengan perintah
+Ada tambahan 1 container lagi berarti jumlahnya ada 2, jadi setiap kita melakukan perubahan image otomatis docker akan membuat sebuah container baru dengan otomatis juga menambahkan nama dan ID baru. Kita juga dapat kembali ke container yang telah kita lakukan perubahan sebelumnya dan meneruskannya dengan perintah
 
 `
 docker start [container ID]
@@ -83,8 +83,6 @@ docker start [container ID]
 docker attach [container ID]
 `
 
-Berikut adalah beberapa perintah lainnya pada Docker :
-Baca juga:  Ebook CentOS Administrator
 Cek info versi docker
 `
 docker info
