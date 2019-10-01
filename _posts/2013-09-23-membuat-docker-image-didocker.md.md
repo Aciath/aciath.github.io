@@ -15,6 +15,8 @@ Untuk mencari image
 `
 $ docker search centos
 `
+![csr config](https://raw.githubusercontent.com/aciath/aciath.github.io/master/static/img/_posts/part3.png)
+
 
 atau kita juga bisa mencari referensi image di docker hub, yaitu repository image official docker untuk mendownload dan mengupload images .
 
@@ -31,3 +33,51 @@ docker pull centos
 `
 
 Tunggu hingga selesai mendownload imagenya.
+Kemudian coba jalankan docker container, dan masuk ke shellnya
+docker run -i -t centos /bin/bash
+
+`
+![csr config](https://raw.githubusercontent.com/aciath/aciath.github.io/master/static/img/_posts/part3-1.png)
+`
+Ketik “exit” untuk keluar, kemudian kita coba cek containernya dengan perintah
+docker ps -a
+
+`
+![csr config](https://raw.githubusercontent.com/aciath/aciath.github.io/master/static/img/_posts/part3-2.png)
+`
+
+Akan tampak 2 nama container, karena kita me-run 2 perintah diatas, coba kembali jalankan perintah docker run -i -t centos /bin/bash
+masuk ke dalam shell lagi, lalu coba buat sebuah file atau perubahan lainnya dan simpan, kemudian anda coba keluar dengan “exit”.
+Lihat lagi daftar containernya
+docker ps -a
+hasilnya akan terlihat
+
+`
+![csr config](https://raw.githubusercontent.com/aciath/aciath.github.io/master/static/img/_posts/part3-3.png)
+`
+Ada tambahan 1 container lagi berarti jumlahnya ada 3, jadi setiap kita melakukan perubahan image otomatis docker akan membuat sebuah container baru dengan otomatis juga menambahkan nama dan ID baru. Kita juga dapat kembali ke container yang telah kita lakukan perubahan sebelumnya dan meneruskannya dengan perintah
+docker start [container ID]
+docker attach [container ID]
+Berikut adalah beberapa perintah lainnya pada Docker :
+Baca juga:  Ebook CentOS Administrator
+Cek info versi docker
+docker info
+Mengunduh images dari Docker hub
+docker pull [image name]
+Menghapus image dalam docker
+docker rmi [image ID]
+Melihat daftar image
+docker images
+Membuat container baru
+docker run [image name] [command to run]
+Menyetop container
+docker stop [container ID]
+Start container
+docker start [container ID]
+Melihat daftar kontainer
+docker ps
+Menghapus kontainer yang ada
+docker rm [container ID]
+Melakukan commit perubahan pada images
+docker commit [container ID] [image name]
+Oke semoga bermanfaat ya ...........
