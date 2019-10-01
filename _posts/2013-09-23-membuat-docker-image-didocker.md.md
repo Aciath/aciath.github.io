@@ -28,6 +28,7 @@ teman-teman bisa search di browser kesayangan kalian
 `
 https://hub.docker.com/
 `
+![csr config](https://raw.githubusercontent.com/aciath/aciath.github.io/master/static/img/_posts/dockerhub.png)
 
 Setelah menemukan nama image yang diinginkan download/pull misal dengan perintah
 
